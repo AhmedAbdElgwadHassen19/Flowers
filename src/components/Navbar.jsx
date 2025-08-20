@@ -7,9 +7,9 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-transparent">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
-        <span className="text-xl font-bold text-white">🌸Flowers</span>
+        <span className="text-xl font-bold text-black ">🌸Flowers</span>
 
-        <ul className="hidden md:flex space-x-8 text-white font-medium">
+        <ul className="hidden md:flex space-x-8 text-black  font-bold">
           {["Home", "Pages", "Flowers", "Blog", "Contact"].map((item) => (
             <li key={item} className="hover:text-yellow-400 cursor-pointer">
               {item}
@@ -23,13 +23,13 @@ export default function Navbar() {
           </button>
 
           <button
-            className="text-white md:hidden"
+            className="text-black md:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={26} /> : <Menu size={26} />}
           </button>
 
-          <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-medium px-4 py-2 rounded-md shadow-md hidden md:block">
+          <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-4 py-2 rounded-md shadow-md hidden md:block">
             Order Now →
           </button>
         </div>
@@ -42,7 +42,7 @@ export default function Navbar() {
               {item}
             </div>
           ))}
-          <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-medium px-4 py-2 rounded-md shadow-md w-full">
+          <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-4 py-2 rounded-md shadow-md w-full">
             Order Now →
           </button>
         </div>

@@ -42,7 +42,7 @@ export default function FlowerStaffSection() {
             <img
               src={img}
               alt={name}
-              className="w-full h-60 sm:h-64 md:h-72 object-cover"
+              className="w-full h-70 sm:h-64 md:h-72 object-center md:object-cover"
             />
             <div className="p-5">
               <h3 className="font-bold text-lg text-gray-800">{name}</h3>

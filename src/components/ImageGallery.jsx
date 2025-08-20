@@ -8,7 +8,7 @@ export default function ImageGallery() {
 
   return (
     <section className="py-16 px-6 bg-white overflow-x-hidden">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto w-full">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-green-700 mb-12">
           Explore Our Flower Collection
         </h2>
@@ -20,11 +20,13 @@ export default function ImageGallery() {
               className="overflow-hidden rounded-xl shadow-md group cursor-pointer"
               data-aos="zoom-in"
             >
-              <img
-                src={src}
-                alt={`Flower ${index + 1}`}
-                className="w-full h-64 object-cover transform group-hover:scale-110 group-hover:brightness-110 transition duration-500"
-              />
+              <div className="overflow-hidden">
+                <img
+                  src={src}
+                  alt={`Flower ${index + 1}`}
+                  className="w-full h-64 object-cover transform group-hover:scale-110 group-hover:brightness-110 transition duration-500"
+                />
+              </div>
             </div>
           ))}
         </div>

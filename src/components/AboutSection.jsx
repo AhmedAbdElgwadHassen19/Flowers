@@ -11,7 +11,7 @@ export default function AboutSection() {
 
   return (
     <section className="bg-green-50 py-16 px-6 md:px-12 lg:px-20 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start relative z-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start relative">
         
         {/* Left Side - Flower Image */}
         <div
@@ -32,7 +32,7 @@ export default function AboutSection() {
 
         <div
           data-aos="fade-left"
-          className="bg-white rounded-xl p-8 lg:p-10 shadow-xl text-gray-900 mb-40"
+          className="bg-white rounded-xl p-8 lg:p-10 shadow-xl text-gray-900 mb-40 "
         >
           <span className="text-xs uppercase font-semibold text-green-600 mb-2 block">
             About Our Flowers
@@ -64,13 +64,13 @@ export default function AboutSection() {
         </div>
       </div>
 
-      <div className="absolute bottom-5 left-0 w-full z-0 space-y-2">
-        <div className="rotate-[-4deg] bg-green-600 text-white py-3 px-6 text-sm md:text-lg font-bold tracking-wider flex flex-wrap justify-center shadow-md gap-4 md:gap-12">
+      <div className="absolute bottom-5  left-0 w-full  space-y-[-40px] md:space-y-2 mb-20 ">
+        <div className="rotate-[-10deg] md:rotate-[-4deg] bg-green-600 text-white py-3 px-6 text-sm md:text-lg font-bold tracking-wider flex flex-wrap justify-center shadow-md gap-4 md:gap-12 ">
           <span>Fresh Roses</span>
           <span>Seasonal Flower Boxes</span>
           <span>Wedding Bouquets</span>
         </div>
-        <div className="rotate-[5deg] bg-black text-white py-3 px-6 text-sm md:text-lg font-bold tracking-wider flex flex-wrap justify-center shadow-md gap-4 md:gap-12">
+        <div className="rotate-[10deg] md:rotate-[4deg] bg-black text-white py-3 px-6 text-sm md:text-lg font-bold tracking-wider flex flex-wrap justify-center shadow-md gap-4 md:gap-12">
           <span>Elegant Tulips</span>
           <span>Orchid Specials</span>
           <span>Luxury Floral Gifts</span>

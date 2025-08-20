@@ -27,7 +27,7 @@ export default function Home() {
       <FlowerStaffSection />
       <FlowerIconsSection />
       <FlowerNewsSection />
-      <ImageSlider/>
+      <ImageSlider/> 
       <Footer/>
     </>
   );

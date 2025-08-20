@@ -24,7 +24,7 @@ export default function FlowerSpecialOffersSection() {
   ];
 
   return (
-    <section className="py-16 px-6 md:px-12 lg:px-20 max-w-7xl mx-auto bg-green-50 rounded-lg">
+    <section className="py-16 px-6 md:px-12 lg:px-20 max-w-6xl mx-auto bg-green-50 rounded-lg overflow-x-hidden">
       <div className="text-center mb-12">
         <span className="text-green-600 text-xs font-semibold uppercase mb-2 block">
           Special Offers

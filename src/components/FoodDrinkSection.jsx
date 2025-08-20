@@ -11,7 +11,7 @@ export default function FlowerExperienceSection() {
   }, []);
 
   return (
-    <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
+    <section className="py-16 px-6 md:px-12 lg:px-20 bg-white overflow-x-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div data-aos="fade-right">
           <span className="text-green-600 text-xs font-semibold uppercase mb-3 inline-block">
@@ -42,7 +42,7 @@ export default function FlowerExperienceSection() {
         </div>
 
         <div className="relative flex justify-center" data-aos="fade-left">
-          <div className="relative w-full max-w-sm">
+          <div className="relative w-full max-w-full">
             <img
               src={flower13}
               alt="Flower Bouquet"

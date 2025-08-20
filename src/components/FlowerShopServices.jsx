@@ -2,7 +2,6 @@ export default function FlowerServices() {
   return (
     <section className="bg-white py-20 px-4 md:px-16">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* النص */}
         <div>
           <span className="text-xs uppercase text-green-600 font-semibold tracking-wide">
             Flower Services
@@ -19,7 +18,7 @@ export default function FlowerServices() {
           </button>
         </div>
 
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {[
             {
               title: "Custom Bouquets",
@@ -53,9 +52,7 @@ export default function FlowerServices() {
             >
               <div className="text-3xl mb-4">{card.icon}</div>
               <h3 className="text-lg font-bold mb-2">{card.title}</h3>
-              <p className="text-sm">
-                {card.desc}
-              </p>
+              <p className="text-sm">{card.desc}</p>
             </div>
           ))}
         </div>

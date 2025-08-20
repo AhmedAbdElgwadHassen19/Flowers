@@ -6,34 +6,24 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-10">
         
         <div className="md:w-1/3">
-          <div className="flex items-center mb-4 space-x-2 text-white font-bold text-xl">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-7 w-7"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              
-            </svg>
-            <span>Fixyland</span>
+          <div className="flex items-center mb-4 space-x-2 text-green-500 font-bold text-2xl">
+            <span>FlowerLand 🌸</span>
           </div>
           <p className="text-sm mb-4">
-            Nam libero tempore cum soluta nobis eligendi optio cumque nihil impedit quo minus maxime placeat facere
+            Bringing nature’s beauty to your hands. Fresh flowers, elegant arrangements, and bouquets for every occasion.
           </p>
 
-          {/* Social icons */}
           <div className="flex space-x-4">
-            <a href="#" className="bg-gray-700 hover:bg-gray-600 p-2 rounded text-white">
+            <a href="#" className="bg-green-700 hover:bg-green-600 p-2 rounded text-white">
               <FaFacebookF />
             </a>
-            <a href="#" className="bg-gray-700 hover:bg-gray-600 p-2 rounded text-white">
+            <a href="#" className="bg-green-700 hover:bg-green-600 p-2 rounded text-white">
               <FaTwitter />
             </a>
-            <a href="#" className="bg-gray-700 hover:bg-gray-600 p-2 rounded text-white">
+            <a href="#" className="bg-green-700 hover:bg-green-600 p-2 rounded text-white">
               <FaInstagram />
             </a>
-            <a href="#" className="bg-gray-700 hover:bg-gray-600 p-2 rounded text-white">
+            <a href="#" className="bg-green-700 hover:bg-green-600 p-2 rounded text-white">
               <FaBehance />
             </a>
           </div>
@@ -43,9 +33,9 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-white mb-4">EXPLORE</h3>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li><a href="#" className="hover:text-white">About Hotel</a></li>
+              <li><a href="#" className="hover:text-white">About Us</a></li>
               <li><a href="#" className="hover:text-white">Pricing</a></li>
-              <li><a href="#" className="hover:text-white">Hotel Staff</a></li>
+              <li><a href="#" className="hover:text-white">Our Florists</a></li>
               <li><a href="#" className="hover:text-white">Latest News</a></li>
               <li><a href="#" className="hover:text-white">Contact Us</a></li>
             </ul>
@@ -54,9 +44,9 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-white mb-4">CONTACT</h3>
             <address className="not-italic text-sm text-gray-400 space-y-2">
-              <p>7631 Sabina Park, T5 Devon Isle, Louisiana, USA</p>
+              <p>123 Bloom Street, Garden City, USA</p>
               <p>📞 (+1) 987 654 3210</p>
-              <p>✉ info@domain.com</p>
+              <p>✉ info@flowerland.com</p>
             </address>
           </div>
         </div>
@@ -71,7 +61,7 @@ export default function Footer() {
             />
             <button
               type="submit"
-              className="bg-green-700 hover:bg-green-600 text-white font-semibold py-2 rounded"
+              className="bg-green-700 hover:bg-green-600 text-white font-semibold py-2 rounded flex items-center justify-center"
               aria-label="Subscribe"
             >
               <svg
@@ -95,7 +85,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-gray-700 mt-10 pt-4 flex justify-between text-xs text-gray-500">
-        <p>© Copyright 2025 Fixyland. All Rights Reserved.</p>
+        <p>© Copyright 2025 FlowerLand. All Rights Reserved.</p>
         <div className="space-x-4">
           <a href="#" className="hover:text-white">Terms and Conditions</a>
           <a href="#" className="hover:text-white">Privacy Policy</a>

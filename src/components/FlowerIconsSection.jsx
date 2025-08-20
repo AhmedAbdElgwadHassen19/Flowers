@@ -1,4 +1,3 @@
-
 export default function FlowerIconsSection() {
   const icons = [
     { src: "🌹", label: "Roses" },
@@ -10,15 +9,17 @@ export default function FlowerIconsSection() {
   ];
 
   return (
-    <section className="py-20 bg-white text-center">
-      <div className="flex justify-center gap-16 flex-wrap max-w-6xl mx-auto">
+    <section className="py-16 bg-white text-center px-6">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 max-w-6xl mx-auto">
         {icons.map(({ src, label }, i) => (
           <div
             key={i}
             className="flex flex-col items-center text-gray-500 hover:text-green-600 transition duration-300"
           >
-            <div className="text-[80px] grayscale">{src}</div> {/* تكبير + أبيض وأسود */}
-            <span className="text-base mt-4 font-medium">{label}</span>
+            <div className="text-6xl sm:text-7xl md:text-8xl">{src}</div>
+            <span className="text-sm sm:text-base mt-3 font-medium">
+              {label}
+            </span>
           </div>
         ))}
       </div>

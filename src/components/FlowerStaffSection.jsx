@@ -21,16 +21,19 @@ const staffData = [
   },
 ];
 
-
 export default function FlowerStaffSection() {
   return (
-    <section className="py-16 bg-green-600">
-      <div className="text-center text-white mb-12">
-        <span className="text-sm uppercase tracking-wider font-semibold">Flower Staff</span>
-        <h2 className="text-3xl font-bold mt-2">Meet Our Expert Florists</h2>
+    <section className="py-16 px-6 bg-green-600">
+      <div className="text-center text-white mb-12 max-w-2xl mx-auto">
+        <span className="text-sm uppercase tracking-wider font-semibold">
+          Flower Staff
+        </span>
+        <h2 className="text-2xl md:text-3xl font-bold mt-2 leading-snug">
+          Meet Our Expert Florists
+        </h2>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto px-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
         {staffData.map(({ name, role, img }, i) => (
           <div
             key={i}
@@ -39,11 +42,11 @@ export default function FlowerStaffSection() {
             <img
               src={img}
               alt={name}
-              className="w-full h-64 object-cover"
+              className="w-full h-60 sm:h-64 md:h-72 object-cover"
             />
-            <div className="p-4">
-              <h3 className="font-bold text-lg">{name}</h3>
-              <p className="text-sm text-gray-500">{role}</p>
+            <div className="p-5">
+              <h3 className="font-bold text-lg text-gray-800">{name}</h3>
+              <p className="text-sm text-gray-500 mt-1">{role}</p>
             </div>
           </div>
         ))}

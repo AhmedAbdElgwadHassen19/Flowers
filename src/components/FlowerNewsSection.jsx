@@ -5,11 +5,11 @@ import { useEffect } from "react";
 
 export default function FlowerNewsSection() {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 1000, once: true });
   }, []);
 
   return (
-    <section className="bg-green-50 py-16">
+    <section className="bg-green-50 py-16 px-6">
       <div className="text-center mb-12">
         <span className="text-green-600 uppercase text-xs font-semibold">
           Flower News
@@ -19,23 +19,25 @@ export default function FlowerNewsSection() {
         </h2>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto px-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {flowerNews.map(({ category, date, author, title, desc, img }, idx) => (
           <div
             key={idx}
-            className="bg-white rounded-xl shadow overflow-hidden"
+            className="bg-white rounded-xl shadow overflow-hidden hover:shadow-lg transition duration-300"
             data-aos="fade-up"
           >
-            <img
-              src={img}
-              alt={title}
-              className="w-full h-52 object-cover"
-            />
+            <div className="overflow-hidden">
+              <img
+                src={img}
+                alt={title}
+                className="w-full h-52 object-cover transform hover:scale-105 transition duration-500"
+              />
+            </div>
             <div className="p-5">
               <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-medium">
                 {category}
               </span>
-              <div className="text-xs text-gray-500 mt-2 mb-3 flex items-center gap-4">
+              <div className="text-xs text-gray-500 mt-2 mb-3 flex items-center gap-2">
                 <span>{date}</span> | <span>{author}</span>
               </div>
               <h3 className="text-lg font-bold mb-2">{title}</h3>
